@@ -226,5 +226,100 @@ import UIKit
 //var realAge = age != nil ? age! : 0
 
 /// unwrappin an optional with the nil coalescing operator
-var age: Int?
-var maxAge = age ?? 100
+//var age: Int?
+//var maxAge = age ?? 100
+
+
+/// checking conditions with switch
+//var age = 19
+//var message = ""
+//switch age {
+//case 13:
+//    message = "Happy Bar Mitzvah"
+//case 16:
+//    message = "Sweet Sixteen!"
+//case 21:
+//    message = "Welcome to Adulthood"
+//default:
+//    message = "Happy Birthday!"
+//}
+
+/// checking multiple conditions per case
+//var age = 6
+//var message = "You go to "
+//
+//switch age {
+//case 2, 3, 4:
+//    message += "Day Care"
+//case 5, 6, 7, 8, 9, 10, 11:
+//    message += "Elementary School"
+//case 18, 19, 20, 21:
+//    message += "College"
+//default:
+//    message += "Work"
+//}
+
+//
+//var ages = (10, 30)
+//var message = ""
+//
+//switch ages {
+//case (10, 20):
+//    message = "Too close"
+//case (10, 30):
+//    message = "The right age"
+//case (10, 40):
+//    message = "Too far"
+//default:
+//    message = "Way Too Far"
+//}
+
+
+/// capturing values with constants
+//var ages = (10, 30)
+//var message = ""
+//
+//
+//switch ages {
+//case (let x, 20):
+//    message = "Too close to \(x)"
+//case(_, 30):
+//    message = "The right age"
+//case(let x, 40):
+//    message = "Too far to \(x)"
+//default:
+//    message = "Way too far"
+//}
+
+/// using a while to create a loop
+//var counter = 0
+//while counter < 5{
+//    counter += 1
+//}
+
+
+///using repeat while to create a loop
+//var counter = 10
+//repeat {
+//    counter += 1
+//} while counter < 5
+
+/// using a for in to iterate over the characters of a string
+//var myText = "Hello"
+//var message = ""
+//
+//for letter in myText {
+//    message += message != "" ? "_": ""
+//    message += "\(letter)"
+//}
+/// interrupting a loop with guard
+var myText = "Hello"
+var counter = 0
+
+for letter in myText {
+    guard letter != "1" else {
+        break
+    }
+    counter += 1
+}
+var message = "The string contains \(counter) letters"
